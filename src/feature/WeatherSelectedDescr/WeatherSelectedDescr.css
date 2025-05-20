@@ -1,0 +1,34 @@
+.descr {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imgWeatherSelectedDescr {
+    height: 70px;
+    width: auto;
+}
+
+#DescrSelected {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 65px;
+}
+
+.imgWind {
+    height: 30px;
+    width: auto;
+}
+
+@media screen and (max-width: 812px) { 
+    #DescrSelected {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}

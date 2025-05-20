@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {createContext, useState} from "react"
+import MainWeatherComponent from "./feature/MainWeatherComponent/MainWeatherComponent"
+import Search from "./feature/Search/Search";
+import { FireRiskProvider } from "./context/FireContext";
+
+
+export const WeatherContext = createContext(null);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [weatherData, setWeatherData] = useState(null);
+    return (<section className="">
+        <WeatherContext.Provider value={{weatherData, setWeatherData}}>
+             <FireRiskProvider>
+                <MainWeatherComponent />
+             </FireRiskProvider>
+        </WeatherContext.Provider>
+    </section>)
 }
 
-export default App;
+export default App

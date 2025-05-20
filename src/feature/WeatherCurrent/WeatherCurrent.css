@@ -1,0 +1,39 @@
+.weatherCurrent {
+    color: var(--temperature-color);
+}
+
+.weatherNow {
+    display: flex;
+    align-items: center; 
+}
+
+#temperatureNow {
+    font-size: 60px;
+}
+
+#imageWeatherNow {
+    width: auto; 
+    height: 70px; 
+}
+
+#feelsLike {
+    padding: 5px 0px;
+}
+
+#description {
+    padding-bottom: 10px;
+}
+
+.windNow {
+    display: flex;
+    gap: 5px;
+}
+
+.weatherHour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    margin: 6px;
+}

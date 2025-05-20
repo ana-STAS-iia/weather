@@ -1,0 +1,14 @@
+.weatherHour {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#temperatureHour {
+    font-size: 32px;
+}
+
+#imageWeatherHour {
+    width: auto; 
+    height: 40px; 
+}

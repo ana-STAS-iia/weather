@@ -1,0 +1,81 @@
+.mainSection {
+    display: flex;
+    min-height: 450px;
+    max-height: 100vh;
+    min-width: 425px;
+    max-width: 90%;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+}
+
+.mainWeatherComponent {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--td-section);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+    color: #fff;
+}
+
+.basicWeather {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    border: 1px solid rgb(136, 173, 241);
+    border-radius: 25px;
+    padding: 25px 20px;
+    justify-content: center;
+    gap: 50px;
+    /*gap: 10px;
+    border-radius: 25px;
+    padding: 25px 20px;
+    justify-content: center;
+    border: 1px solid rgb(136, 173, 241);
+    background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    width: auto; 
+    height: auto;*/
+}
+
+.allWeather {
+    display: flex;
+    gap: 40px;
+}
+
+.graphSection {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.forecast {
+    color: var(--temperature-color);
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 812px) {
+    .mainSection {
+        min-height: 100vh; 
+        max-height: 1226px; 
+    }
+
+    .allWeather {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .graph {
+        padding: 10px;
+    }
+}
+

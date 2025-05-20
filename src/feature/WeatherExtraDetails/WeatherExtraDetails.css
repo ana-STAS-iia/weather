@@ -1,0 +1,59 @@
+.weatherExtraDetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивное количество колонок */
+    gap: 10px;
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.weatherDetail:nth-child(7) {
+    grid-column: span 2;
+}
+
+.weatherDetail:nth-child(6),
+.weatherDetail:nth-child(5) {
+    grid-column: span 1;
+}
+
+.weatherDetail:nth-child(8) {
+    grid-column: span 2;
+}
+
+.weatherDetail:nth-child(9),
+.weatherDetail:nth-child(10) {
+    grid-column: span 1;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1024px) {
+    .weatherExtraDetails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .weatherExtraDetails {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/*.weatherExtraDetails {
+    display: flex;
+    max-width: 845px;
+    min-width: 255px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 812px) {
+    .weatherExtraDetails {
+        justify-content: center;
+    }
+
+}*/
+
+
